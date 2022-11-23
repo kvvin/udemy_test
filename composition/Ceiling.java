@@ -2,18 +2,18 @@ package composition;
 
 public class Ceiling {
     private int height;
-    private int color;
+    private int paintedColor;
 
-    public Ceiling(int height, int color) {
+    public Ceiling(int height, int paintedColor) {
         this.height = height;
-        this.color = color;
+        this.paintedColor = paintedColor;
     }
 
     public int getHeight() {
         return height;
     }
 
-    public int getColor() {
-        return color;
+    public int getPaintedColor() {
+        return paintedColor;
     }
 }
