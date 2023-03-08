@@ -1,15 +1,22 @@
 import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 class hmm{
-    public static void main(String [] args){
+    public static void main (String[]args){
         Scanner sc = new Scanner(System.in);
-        String str = sc.nextLine();
-        Pattern pattern = Pattern.compile("^[a-zA-Z]([a-zA-Z0-9#-]{1,})$");
-        Matcher matcher = pattern.matcher(str);
-        if(matcher.find())
-            System.out.println(str+":"+matcher.group());
-        else
-            System.out.println(str+":Invalid Identifier");
+        int n,m,x,y,i,j;
+        m = sc.nextInt();
+        n = sc.nextInt();
+        int a[][] = new int[m][n];
+        for(i = 0; i<m ; i++){
+            for(j=0;j<n;j++)
+                a[i][j]=sc.nextInt();
+        }
+        for(i = 0; i<m;i++)
+        {
+            for(j=0;j<n;j++){
+                System.out.print(a[i][j]+" ");
+            }
+            System.out.println();
+        }
+
     }
 }
